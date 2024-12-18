@@ -1,0 +1,153 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier essai Bootstrap</title>
+
+    <!-- lien pour le CSS {B} en général -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- lien pour ajouter un élément icon de la bibliothèque {B} -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+        <h2 class="py-3">Les alertes simples</h2>
+        <div class="alert alert-primary" role="alert">
+            Une alerte informative de couleur bleue
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            Une alerte informative de couleur gris clair
+        </div>
+        <div class="alert alert-success" role="alert">
+            Une alerte succès de couleur verte
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Une alerte danger de couleur rouge
+        </div>
+        <div class="alert alert-warning" role="alert">
+            Une alerte attention de couleur jaune
+        </div>
+        <div class="alert alert-info" role="alert">
+            Une alerte informative de couleur bleu clair
+        </div>
+        <div class="alert alert-light" role="alert">
+            Une alerte informative de couleur gris clair
+        </div>
+        <div class="alert alert-dark" role="alert">
+            Une alerte informative de couleur grise
+        </div>
+
+        <!-- Intégration d'exemples de badges -->
+    <div>
+        <h1>Voici mon exemple 1 trop la <span class="badge bg-primary">classe</span></h1>        
+        <h2>Voici mon exemple 2 trop la <span class="badge bg-success">classe</span></h2>
+        <h3>Voici mon exemple 3 trop la <span class="badge bg-warning">classe</span></h3>
+    </div>
+
+        <!-- exemple de buttons alerte -->
+    <hr class="m-5 invisible">
+    <div class="container">
+        <button class="btn btn-primary position-relative">Nouveaux messages <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-pill"></span></button>
+    </div>
+
+    <hr class="m-5 invisible">
+    <div class="container">
+        <button class="btn btn-primary">Notifications <span class="badge bg bg-secondary">4</span></button>
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- Exemple de balises listes et buttons -->
+    <div class="container">
+        <div class="col">
+        <ul class="list-group col-6 mx-auto ">
+            <li class="list-group-item"><i class="bi bi-hand-thumbs-up-fill me-2"></i>Premier élément de la liste</li>
+            <li class="list-group-item list-group-item-primary active" aria-current="true">Deuxième élément de la liste</li>
+            <li class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">Troisième élément de la liste<span class="badge bg-primary rounded-pill">2</span></li>
+            <li class="list-group-item disabled" aria-disabled="true">Quatrième élément de la liste</li>
+            <li class="list-group-item list-group-item-success">Cinquième élément de la liste<i class="bi bi-hand-thumbs-up-fill ms-2"></i></li>
+        </ul> <br><br><br>
+        <ol class="list-group list-group-numbered col-6 mx-auto list-group-flush">
+            <li class="list-group-item"><i class="bi bi-hand-thumbs-up-fill me-2"></i>Premier élément de la liste</li>
+            <li class="list-group-item active" aria-current="true">Deuxième élément de la liste</li>
+            <li class="list-group-item list-group-item-warning d-flex  align-items-center">Troisième élément de la liste<span class="badge bg-primary rounded-pill ms-auto">2</span></li>
+            <li class="list-group-item disabled" aria-disabled="true">Quatrième élément de la liste</li>
+            <li class="list-group-item list-group-item-success">Cinquième élément de la liste<i class="bi bi-hand-thumbs-up-fill ms-2"></i></li>
+        </ol>
+    </div>
+</div> <br><br><br>
+
+<!-- Autre exemple de liste horizontale -->
+<div class="container">
+    <ol class="list-group text-center list-group-horizontal-lg">
+        <li class="list-group-item"> Premier élément de la liste</li>
+        <li class="list-group-item">Deuxième élément de la liste</li>
+        <li class="list-group-item">Troisième élément de la liste</li>
+        <li class="list-group-item">Quatrième élément de la liste</li>
+        <li class="list-group-item">Cinquième élément de la liste</li>
+    </ol>
+</div> <br><br><br>
+
+<!-- avec boutons -->
+<div class="container">
+    <div class="row">
+        <div class="list-group col-6">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                Premier lien de la liste</a>
+            <a href="#" class="list-group-item list-group-item-action">Deuxième lien de la liste</a>
+            <a href="#" class="list-group-item list-group-item-action">Troisième lien de la liste</a>
+            <a href="#" class="list-group-item list-group-item-action">Quatrième lien de la liste</a>
+            <a class="list-group-item list-group-item-action disabled">Cinquième lien de la liste</a>
+          </div>
+          <div class="list-group col-6">
+            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">Premier bouton de la liste</button>
+            <button type="button" class="list-group-item list-group-item-action">Deuxième bouton de la liste</button>
+            <button type="button" class="list-group-item list-group-item-action">Troisième bouton de la liste</button>
+            <button type="button" class="list-group-item list-group-item-action">Quatrième bouton de la liste</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Cinquième bouton de la liste</button>
+          </div>
+    </div>
+</div><br><br><br>
+
+<!-- actionner boutons -->
+<div class="container">
+    <div class="row" role="tabpanel">
+        <div class="list-group col-4" id="maListe" role="tablist">
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#accueil" role="tab">Accueil</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#portfolio"
+role="tab">Portfolio</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#apropos" role="tab">A propos</a>
+            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#contact"
+role="tab">Contact</a>
+        </div>
+        <div class="tab-content col-8">
+            <div class="tab-pane fade show" id="accueil" role="tabpanel">
+                <h2>Accueil</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum nulla id! Ea, dolor rerum corporis, omnis exercitationem laboriosam minus adipisci expedita quos sit molestias consequatur facilis repellat debitis cumque?</p>
+            </div>
+            <div class="tab-pane fade show " id="portfolio" role="tabpanel"><h2>Portfolio</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum nulla id! Ea, dolor rerum corporis, omnis exercitationem laboriosam minus adipisci expedita quos sit molestias consequatur facilis repellat debitis cumque?</p>
+            </div>
+            <div class="tab-pane fade show " id="apropos" role="tabpanel"><h2>A propos</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum nulla id! Ea, dolor rerum corporis, omnis exercitationem laboriosam minus adipisci expedita quos sit molestias consequatur facilis repellat debitis cumque?</p>
+            </div>
+            <div class="tab-pane fade show " id="contact" role="tabpanel"><h2>Contact</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum nulla id! Ea, dolor rerum corporis, omnis exercitationem laboriosam minus adipisci expedita quos sit molestias consequatur facilis repellat debitis cumque?</p>
+           </div>
+        </div>
+    </div>
+</div><br><br><br>
+
+
+<footer class="container-fluid bg-primary">
+    <div class="row justify-content-evenly align-items-center text-center" style="min-height: 100px">
+    <div class="col-2 bg-danger text-light"><a href="index.html">Retourner à la première page</a>
+</footer>
+</body>
+</html>
