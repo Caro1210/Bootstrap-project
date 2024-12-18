@@ -1,0 +1,71 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier essai Bootstrap</title>
+
+    <!-- lien pour le CSS {B} en général -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- lien pour ajouter un élément icon de la bibliothèque {B} -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+<!-- exemple de tableau -->
+<div class="container">
+    <div class="table-responsive-md">
+<table class="table table-warning table-striped table-hover table-bordered border-primary caption-top">
+             <caption>Listes des usagers</caption>
+             <thead class="table-dark ">
+               <tr>
+                 <th scope="col">#</th>
+                 <th scope="col">Prénom</th>
+                 <th scope="col">Nom</th>
+                 <th scope="col">Email</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">1</th>
+                 <td>Jean</td>
+                 <td >Dupont</td>
+                 <td>jean@dupont.fr</td>
+               </tr>
+               <tr>
+                 <th scope="row">2</th>
+                 <td>Charles</td>
+                 <td class="table-active">Dubois</td>
+                 <td>charles@dubois.fr</td>
+               </tr>
+               <tr>
+                 <th scope="row">3</th>
+                 <td colspan="2">Marguerite la vache</td>
+                 <td>marguerite@lavache.fr</td>
+               </tr>
+             </tbody>
+             <tfoot>
+                 <th scope="row">Pied de table</th>
+                 <td><i class="bi bi-hand-thumbs-up-fill"></i> Coup de pouce</td>
+                 <td><button type="button" class="btn btn-success">Je suis un bouton</button></td>
+                 <td><input type="radio" name="btnradio" class="form-check-input me-2" autocomplete="off">oui<input type="radio" name="btnradio" class="form-check-input ms-4 me-2" autocomplete="off">non</td>
+             </tfoot>
+           </table>
+     </div>
+</div>
+<footer class="container-fluid bg-primary">
+    <div class="row justify-content-evenly align-items-center text-center" style="min-height: 100px">
+    <div class="col-2 bg-danger text-light"><a href="index.html">Aller à la première page</a></div>
+    <div class="col-2 bg-danger text-light"><a href="index2.html">Aller à la deuxième page</a></div>
+
+</footer>
+  </body>
+</html>
